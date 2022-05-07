@@ -1,0 +1,20 @@
+.main-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  color: var(--white-color);
+  background-color: #2f303a;
+  text-align: center;
+}
+
+.main-section__title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
