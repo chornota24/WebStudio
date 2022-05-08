@@ -31,12 +31,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.modal__close-btn:hover,
-.modal__close-btn:focus {
-  fill: var(--accent-color);
-  transition: fill;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    transition: fill;
+  }
 }
 
 .backdrop.is-hidden {
@@ -64,14 +64,12 @@
   box-sizing: border-box;
   border-radius: 4px;
   background-color: transparent;
-}
-
-.modal-input:focus {
-  border-color: var(--accent-color);
-}
-
-.modal-input:focus + .input-icon {
-  fill: var(--accent-color);
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &:focus + .input-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .form-input + .form-input {
@@ -133,29 +131,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    margin-right: 5px;
+    display: block;
+  }
+  .modal-check:checked + &::before {
+    background-image: url(../icons/check.svg);
+    background-color: var(--accent-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: transparent;
+  }
 }
 
 .form-privacy {
   margin-top: 30px;
-}
-
-.modal-check-text::before {
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid #000;
-  border-radius: 3px;
-  margin-right: 5px;
-  display: block;
-}
-
-.modal-check:checked + .modal-check-text::before {
-  background-image: url(../icons/check.svg);
-  background-color: var(--accent-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border: transparent;
 }
 
 .privacy-link {

@@ -14,6 +14,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 .footer-email,
@@ -26,6 +31,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 .footer-list .footer-item + .footer-item {
@@ -39,15 +49,6 @@
 .address {
   margin-top: 20px;
   font-style: normal;
-}
-
-.footer-address:focus,
-.footer-address:hover,
-.footer-email:focus,
-.footer-email:hover,
-.footer-phone:focus,
-.footer-phone:hover {
-  color: var(--accent-color);
 }
 
 .follow-us {
@@ -92,11 +93,11 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer-input-position {
